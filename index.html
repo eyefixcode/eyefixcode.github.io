@@ -1,55 +1,551 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-  <title>Software Developer Portfolio</title>
-  <link href="styles.css" rel="stylesheet" type="text/CSS"/>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>James Settles Portfolio - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/icon2.png" rel="icon">
+  <link href="assets/img/icon2.png" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <script>
+    function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+        document.getElementById("successMessage").style.display = "block";
+    }
+</script>
+<style>
+    #successMessage {
+        display: none;
+        background-color: #dff0d8;
+        border: 1px solid #d6e9c6;
+        color: #3c763d;
+        padding: 8px;
+        margin-top: 10px;
+    }
+</style>
+  <!-- ======================================================= -->
 </head>
+
 <body>
-  <header>
-    <h1>Software Developer Portfolio</h1>
-    <h2>James Bryce Settles</h2>
-  </header>
-  <section>
-    <h3>About Me</h3>
-    <p>I am a software developer with experience in a variety of technologies. I am passionate about building great software that solves real-world problems.</p>
-    <p>I have a strong understanding of the software development process, from requirements gathering to testing and deployment. I am also proficient in a variety of programming languages and frameworks.</p>
-  </section>
-  <section>
-    <h3>Projects</h3>
-    <ul>
-      <li>Agent Model Visualization Dashboard</li>
-      <li>COVID-19 Positivity Dashboard Tracker</li>
-      <li>Laboratory Automation Query Dashboard</li>
-      <ul>
-        <li></li>
-      </ul>
-    </ul>
-  </section>
-  <section>
-    <h3>Skills</h3>
-    <ul>
-      <li>Programming Languages: Python, R, SQL, Javascript</li>
-      <li>Databases: MSSQL, Oracle SQL, Metabase, Snowflake EDW,  </li>
-      <li>DevOps: Docker, GitHub</li>
-    </ul>
-  </section>
-  <footer>
-    <p>Copyright &copy; James Settles 2023</p>
-  </footer>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">James Settles</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+       <a href="index.html" class="logo"><img src="assets/img/icon2.png" alt="" class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>      
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <ul>
+          <li> <!--SPACE IN NAV BAR-->   </li>
+        </ul>
+        <div class="socials">
+          <ul>
+              <li><a href="https://www.linkedin.com/in/james-bryce-settles-99675013a/"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
+              <li><a href="https://twitter.com/i/flow/login?redirect_after_login=%2Feyefixcode"><span class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
+              <li><a href="https://www.instagram.com/iceybrycie/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
+          </ul>
+        </div>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/science/Cell_img.png)">
+    <div class="overlay-itro"></div>
+    <div class="hero-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <!--<p class="display-6 color-d">Hello, world!</p>-->
+          <h1 class="hero-title mb-4">I am James Settles</h1>
+          <p class="hero-subtitle"><span class="typed" data-typed-items="Scientist, Engineer, Software Developer, Automation Consultant"></span></p>
+          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+        </div>
+      </div>
+    </div>
+  </div><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="box-shadow-full">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-5">
+                      <div class="about-img">
+                        <img src="assets/img/profile/prof.JPG" class="img-fluid rounded b-shadow-a" alt="">
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-7">
+                      <div class="about-info">
+                        <p><span class="title-s">Name: </span> <span>James Settles</span></p>
+                        <p><span class="title-s">Profile: </span> <span>Problem Solver</span></p>
+                        <p><span class="title-s">Email: </span> <span>settles.james.b@gmail.com</span></p>
+                        <!-- </1><p><span class="title-s">Phone: </span> <span>(617) 557-0089</span></p> -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skill-mf">
+                    <p class="title-s">Skill</p>
+                    <span>Python</span> <span class="pull-right">85%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>SQL</span> <span class="pull-right">90%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>R</span> <span class="pull-right">80%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>Data Visualization</span> <span class="pull-right">90%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="about-me pt-4 pt-md-0">
+                    <div class="title-box-2">
+                      <h5 class="title-left">
+                        About me
+                      </h5>
+                    </div>
+                    <p class="lead">
+                      Hello and welcome!
+                    </p>
+                    <p class="lead">
+                      I am a versatile problem-solver with a passion for exploring innovation in tech and medicine and all intersections.
+
+                      My interests span a wide range, encompassing the challenges faced by public health, medicine, AI, and data science. I am adept at leveraging tools such as Python, SQL, and R for data analysis and visualization.
+                    </p>
+                    <p class="lead">
+                      As a software development engineer with a background in the design and optimization of automated laboratory workflows, I am always eager to learn new advancements in tech and collaborate with fellow professionals.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services-mf pt-5 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Services
+              </h3>
+              <p class="subtitle-a">
+                Services Offered
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-robot"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Laboratory Automation</h2>
+                <p class="s-description text-center">
+                  Script development for automated platforms, integration with LIMS databases, liquid class development, and high-throughput assay optimization.
+                </p>
+                <p>
+                  Robotic Liquid Handling Platforms: (<a href="https://www.hamiltoncompany.com/automated-liquid-handling/platforms/microlab-star">Hamilton STAR</a> / <a href="https://www.hamiltoncompany.com/automated-liquid-handling/assay-ready-workstations/aliquot-starlet">STARlet</a>, <a href="https://www.hamiltoncompany.com/automated-liquid-handling/platforms/microlab-prep?utm_source=adwords&utm_medium=ppc&utm_campaign=Robotics&utm_term=&hsa_tgt=dsa-2253628232837&hsa_grp=152991030636&hsa_mt=&hsa_cam=20503675415&hsa_ver=3&hsa_src=g&hsa_net=adwords&hsa_kw=&hsa_acc=3619911770&hsa_ad=671885825925&gclid=Cj0KCQjw9fqnBhDSARIsAHlcQYTgNOdKcw2ElSadCWo7syfh49jGuo0BUZll5yMUBUnnzsZNTTe67BEaAsFrEALw_wcB">Hamilton MicroLab Prep</a>, <a href="https://www.molecular.abbott/int/en/products/infectious-disease/alinity-m-product-overview">Abbot Alinity M-series</a>, <a href="https://www.agilent.com/en/product/automated-liquid-handling/automated-liquid-handling-platforms/bravo-automated-liquid-handling-platform?gclid=Cj0KCQjw9fqnBhDSARIsAHlcQYT4tlkqWHsEdycMbE34UlIJZjqsSDsd_x6BO78jti0YxGHsyJA349kaAuHuEALw_wcB&gclsrc=aw.ds">Agilent Bravo</a>)
+                </p>
+                <p>
+                  Decapping Stations: (<a href="https://scinomix.com/product/sci-print-vxl">Scinomix VXL</a>, <a href="https://healthcare-in-europe.com/en/labbook/automation-sample-processing/2242-sarstedt-decapper-dc-1200-recapper-rc-1200.html">SARSTEDT Decapper DC1200</a>)
+                </p>
+                <p>
+                  Extraction: (<a href="https://www.thermofisher.com/us/en/home/life-science/dna-rna-purification-analysis/automated-purification-extraction/kingfisher-systems/models/kingfisher-flex.html">Thermo Scientific: KingFisher Flex</a>)
+                </p>
+                <p>
+                  PCR WorkStations: (<a href="https://www.bio-rad.com/en-us/product/cfx384-touch-real-time-pcr-detection-system?ID=LJB22YE8Z">Bio-Rad PCR System Model CFX384</a>)
+                </p>
+                <p>
+                  Fluid Verification: (<a href="https://www.artel.co/products/mvs-multichannel-verification-system/">ARTEL MVS</a>)
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-code-square"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">General Script Development</h2>
+                <p class="s-description text-center">
+                  Exploratory data analysis projects including data mining and SIR modeling for disease.
+                </p>
+                <p>
+                  Python, R, SPSS, NetLogo (Agent-based Modeling)
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-database"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">SQL Database Management</h2>
+                <p class="s-description text-center">
+                  Constructing native queries in SQL-based languages to draw insights for data and reporting.
+                </p>
+                <p>
+                  MSSQL Server, Oracle SQL, SQLite, BigQuery
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-graph-up"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Data Vizualization</h2>
+                <p class="s-description text-center">
+                  Dashboard Creation
+                </p>
+                <p>
+                  R, R-shiny, Python, Microsoft Power Platform (PowerBI/PowerAutomate/SharePoint), MetaBase
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-bug"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Script Debugging</h2>
+                <p class="s-description text-center">
+                  Revise pre-existing scripts and troubleshoot errors as needed.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-bag-check-fill"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Script Validation</h2>
+                <p class="s-description text-center">
+                  Experienced in designing and executing robust validation plans to execute functionality of code projects and common CI/CD practices.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Counter Section ======= -->
+    <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/science/Cell_img2.jpg)">
+      <div class="overlay-mf"></div>
+      <div class="container position-relative">
+        <div class="row">
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="bi bi-check"></i></span>
+              </div>
+              <!--might want to hold on this for now-->
+              <div class="counter-num">
+                <p data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="counter purecounter"></p>
+                <span class="counter-text">PROJECTS COMPLETED</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="bi bi-journal-richtext"></i></span>
+              </div>
+              <div class="counter-num">
+                <p data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="counter purecounter"></p>
+                <span class="counter-text">YEARS OF EXPERIENCE</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="bi bi-people"></i></span>
+              </div>
+              <div class="counter-num">
+                <p data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="counter purecounter"></p>
+                <span class="counter-text">TOTAL CLIENTS</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="bi bi-award"></i></span>
+              </div>
+              <div class="counter-num">
+                <p data-purecounter-start="0" data-purecounter-end="9" data-purecounter-duration="1" class="counter purecounter"></p>
+                <span class="counter-text">CLINICAL ASSAYS VALIDATED</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Counter Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="work" class="portfolio-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Portfolio
+              </h3>
+              <p class="subtitle-a">
+                Public-facing data projects code samples.
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/soft-lang/python.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/soft-lang/python.png" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Python</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory"><a href="https://github.com/eyefixcode/Py">Link Source Code Repository</a></span> / <span class="w-date">12 Sep. 2023</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/soft-lang/R.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/soft-lang/R.png" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">R/R-Studio</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory"><a href="https://github.com/eyefixcode/RStudio">Link Source Code Repository</a></span> / <span class="w-date">12 Sep. 2023</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/soft-lang/SQL.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/soft-lang/SQL.png" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">SQL</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Link Source Code Repository</span> / <span class="w-date">12 Sep. 2023</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- Gallery Section here add
+      Lab assay dev
+      see consulting photo album
+      see PPD/thermo album
+      see 
+    -->
+
+    
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/Automation/Pipette_img2.jpg)">
+      <div class="overlay-mf"></div>
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-12">
+                  <div class="contact-mf">
+                      <div id="contact" class="box-shadow-full">
+                          <div class="row">
+                              <div class="col-md-6">
+                                  <div class="title-box-2">
+                                      <h5 class="title-left">
+                                          Contact Inquiry
+                                      </h5>
+                                  </div>
+                                  <div>
+                                      <form id="myForm" action="https://formspree.io/f/mwkdqeyp" method="POST" role="form" class="php-email-form" onsubmit="closeForm()">
+                                          <div class="row">
+                                              <div class="col-md-12 mb-3">
+                                                  <div class="form-group">
+                                                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                                                  </div>
+                                              </div>
+                                              <div class="col-md-12 mb-3">
+                                                  <div class="form-group">
+                                                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                                                  </div>
+                                              </div>
+                                              <div class="col-md-12 mb-3">
+                                                  <div class="form-group">
+                                                      <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                                                  </div>
+                                              </div>
+                                              <div class="col-md-12">
+                                                  <div class="form-group">
+                                                      <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                                                  </div>
+                                              </div>
+                                              <div class="col-md-12 text-center my-3">
+                                                  <div class="loading">Loading</div>
+                                                  <div class="error-message"></div>
+                                                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                                              </div>
+  
+                                              <div class="col-md-12 text-center">
+                                                  <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
+                                              </div>
+                                          </div>
+                                      </form>
+                                      <div id="successMessage" class="col-md-12 text-center">
+                                          <div class="alert alert-success" role="alert">
+                                              Submission successful!
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <div class="title-box-2 pt-4 pt-md-0">
+                                      <h5 class="title-left">
+                                          Connect!
+                                      </h5>
+                                  </div>
+                                  <div class="socials">
+                                    <ul>
+                                        <!-- <li><a href=""><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li> -->
+                                        <li><a href="https://www.linkedin.com/in/james-bryce-settles-99675013a/"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
+                                        <li><a href="https://twitter.com/i/flow/login?redirect_after_login=%2Feyefixcode"><span class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
+                                        <li><a href="https://www.instagram.com/iceybrycie/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
+                                    </ul>
+                                  </div>
+                                  <div class="more-info">
+                                      <p class="lead">
+                                        
+                                      </p>
+                                      <ul class="list-ico">
+                                          <li><span class="bi bi-geo-alt"></span> LOS ANGELES, CA 90008</li>
+                                          <!-- </1><li><span class="bi bi-phone"></span> (617) 557-0089</li> -->
+                                          <li><span class="bi bi-envelope"></span> <a href="mailto:settles.james.b@gmail.com">settles.james.b@gmail.com</a></li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+
+ 
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
-
-<! -- TASKS!!!! -->
-<! -- Add link to github: @eyefixcode -->
-<! -- Add link to linkedin: https://www.linkedin.com/in/james-bryce-settles-99675013a/ -->
-
-<! -- Make Bucket Data Science -->
-<! -- Make Bucket Automation --> 
-<! -- Make Bucket Health initiatives -->
-<! -- Make Bucket Hobbies and interests -->
-
-<! -- Make Banner connect with me -->
-
-
-
