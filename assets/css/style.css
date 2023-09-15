@@ -1422,7 +1422,7 @@ a:hover {
 
 .widget-tags ul li {
   display: inline-block;
-  background-color: Green;
+  background-color: #0078ff;
   padding: 0.2rem 0.6rem;
   margin-bottom: 0.5rem;
   border-radius: 15px;
@@ -1439,7 +1439,7 @@ footer {
   text-align: center;
   color: #fff;
   padding: 25px 0;
-  background: green;
+  background: #0078ff;
 }
 
 footer .copyright {
