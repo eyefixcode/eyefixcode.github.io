@@ -26,8 +26,8 @@
         document.getElementById("myForm").style.display = "none";
         document.getElementById("successMessage").style.display = "block";
     }
-</script>
-<style>
+  </script>
+  <style>
     #successMessage {
         display: none;
         background-color: #dff0d8;
@@ -36,8 +36,15 @@
         padding: 8px;
         margin-top: 10px;
     }
-</style>
-  <!-- ======================================================= -->
+  </style>
+  <style>
+    .progress-bar {
+      width: 0;
+      height: 20px;
+      background-color: #63ce64;
+    }
+  </style>
+<!-- ======================================================= -->
 </head>
 
 <body>
@@ -54,8 +61,9 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>      
+          <li><a class="nav-link scrollto" href="#services">Services</a></li> 
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link" href="assets/resume/JamesSettles30OctResumeDS.pdf"><span class="bi bi-filetype-pdf"> <b>Download Resume</b></i></span></a></li>      
         </ul>
         <ul>
           <li> <!--SPACE IN NAV BAR-->   </li>
@@ -63,6 +71,7 @@
         <div class="socials">
           <ul>
               <li><a href="https://www.linkedin.com/in/james-bryce-settles-99675013a/"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
+              <li><a href="https://github.com/eyefixcode"><span class="ico-circle"><i class="bi bi-github"></i></span></a></li>
               <li><a href="https://twitter.com/i/flow/login?redirect_after_login=%2Feyefixcode"><span class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
               <li><a href="https://www.instagram.com/iceybrycie/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
           </ul>
@@ -74,7 +83,7 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/science/Cell_img.png)">
+  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/science/Cell_img.png); height: 500px;">
     <div class="overlay-itro"></div>
     <div class="hero-content display-table">
       <div class="table-cell">
@@ -90,67 +99,60 @@
 
   <main id="main">
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="box-shadow-full">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="row">
-                    <div class="col-sm-6 col-md-5">
-                      <div class="about-img">
-                        <img src="assets/img/profile/prof.JPG" class="img-fluid rounded b-shadow-a" alt="">
-                      </div>
-                    </div>
-                    <div class="col-sm-6 col-md-7">
-                      <div class="about-info">
-                        <p><span class="title-s">Name: </span> <span>James Settles</span></p>
-                        <p><span class="title-s">Profile: </span> <span>Problem Solver</span></p>
-                        <p><span class="title-s">Email: </span> <span>settles.james.b@gmail.com</span></p>
-                        <!-- </1><p><span class="title-s">Phone: </span> <span>(617) 557-0089</span></p> -->
-                      </div>
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about-mf sect-pt4 route">
+    <div class="container" style="height:flex">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="box-shadow-full">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-sm-6 col-md-5">
+                    <div class="about-img">
+                      <img src="assets/img/profile/prof.JPG" style="border-radius: 40%;" class="img-fluid b-shadow-a" alt="Profile Image">
                     </div>
                   </div>
-                  <div class="skill-mf">
-                    <p class="title-s">Skill</p>
-                    <span>Python</span> <span class="pull-right">85%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>SQL</span> <span class="pull-right">90%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>R</span> <span class="pull-right">80%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>Data Visualization</span> <span class="pull-right">90%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="col-sm-6 col-md-7">
+                    <div class="about-info">
+                      <p><span class="title-s">Name: </span> James Settles</p>
+                      <p><span class="title-s">Profile: </span> Data Scientist</p>
+                      <p><span class="title-s">Email: </span> <a href="mailto: settles.james.b@gmail.com">settles.james.b@gmail.com</a></p>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="about-me pt-4 pt-md-0">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                        About me
-                      </h5>
-                    </div>
-                    <p class="lead">
-                      Hello and welcome!
-                    </p>
-                    <p class="lead">
-                      I am a versatile problem-solver with a passion for exploring innovation in tech and medicine and all intersections.
+              </div>
+              <div class="col-md-6">
+                <div class="about-me pt-4 pt-md-0">
+                  <div class="title-box-2">
+                    <h5 class="title-left">About Me</h5>
+                  </div>
+                  <p class="lead">Versatile problem-solver passionate about tech, medicine, and their intersections. Experienced in Python, SQL, and R for data analysis and visualization.</p>
+                  <p class="lead">Software development engineer specializing in automated laboratory workflows. Eager to learn and collaborate on advancements in tech.</p>
+                </div>
+              </div>
+            </div>
 
-                      My interests span a wide range, encompassing the challenges faced by public health, medicine, AI, and data science. I am adept at leveraging tools such as Python, SQL, and R for data analysis and visualization.
-                    </p>
-                    <p class="lead">
-                      As a software development engineer with a background in the design and optimization of automated laboratory workflows, I am always eager to learn new advancements in tech and collaborate with fellow professionals.
-                    </p>
+            <!-- Fancy Skills Loading Bars -->
+            <div class="row mt-4">
+              <div class="col-md-6">
+                <div class="skill-mf">
+                  <p class="title-s"><span style="font-size: 30px; font-weight: bold">Skills</span></p>
+                  <div class="skill-item">
+                    <span><b>Python</b></span>
+                    <div class="progress progress-bar" id="progress-bar-85" role="progressbar" style="width: 85%; height: 20px;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><b>85%</b></div>
+                  </div>
+                  <div class="skill-item">
+                    <span><b>SQL</b></span>
+                    <div class="progress progress-bar" id="progress-bar-90" role="progressbar" style="width: 90%; height: 20px;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"><b>90%</b></div>
+                  </div>
+                  <div class="skill-item">
+                    <span><b>R</b></span>
+                    <div class="progress progress-bar" id="progress-bar-80" role="progressbar" style="width: 80%; height: 20px" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"><b>80%</b></div>
+                  </div>
+                  <div class="skill-item">
+                    <span><b>Data Visualization</b></span>
+                    <div class="progress progress-bar" id="progress-bar-90-2" role="progressbar" style="width: 90%; height: 20px;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"><b>90%</b></div>
                   </div>
                 </div>
               </div>
@@ -158,130 +160,113 @@
           </div>
         </div>
       </div>
-    </section><!-- End About Section -->
+    </div>
+  </section>
 
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services-mf pt-5 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Services
-              </h3>
-              <p class="subtitle-a">
-                Services Offered
+  <script>
+    function animateProgressBar(elementId, width) {
+      var progressBar = document.getElementById(elementId);
+      var progress = 0;
+
+      function frame() {
+        if (progress >= width) {
+          clearInterval(id);
+        } else {
+          progress++;
+          progressBar.style.width = progress + '%';
+        }
+      }
+
+      var id = setInterval(frame, 20);
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      animateProgressBar('progress-bar-85', 85);
+      animateProgressBar('progress-bar-90', 90);
+      animateProgressBar('progress-bar-80', 80);
+      animateProgressBar('progress-bar-90-2', 90);
+    });
+  </script>
+  <!-- End About Section -->
+
+    <!-- ======= Professional Services Section ======= -->
+  <section id="services" class="services-mf pt-5 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">Professional Services</h3>
+            <p class="subtitle-a">Elevating Lab Operations and Data Analysis Needs</p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Laboratory Automation -->
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico"><span class="ico-circle"><i class="bi bi-robot"></i></span></div>
+            <div class="service-content">
+              <h2 class="s-title">Laboratory Automation</h2>
+              <p class="s-description text-center">Experience in script development for automated platforms, seamless integration with LIMS databases, liquid class development, and optimization of high-throughput assays.</p>
+              <p>
+                <b>Robotic Liquid Handling Platforms:</b> (<a href="https://www.hamiltoncompany.com/automated-liquid-handling/platforms/microlab-star">Hamilton STAR</a> / <a href="https://www.hamiltoncompany.com/automated-liquid-handling/assay-ready-workstations/aliquot-starlet">STARlet</a>, <a href="https://www.hamiltoncompany.com/automated-liquid-handling/platforms/microlab-prep?utm_source=adwords&utm_medium=ppc&utm_campaign=Robotics&utm_term=&hsa_tgt=dsa-2253628232837&hsa_grp=152991030636&hsa_mt=&hsa_cam=20503675415&hsa_ver=3&hsa_src=g&hsa_net=adwords&hsa_kw=&hsa_acc=3619911770&hsa_ad=671885825925&gclid=Cj0KCQjw9fqnBhDSARIsAHlcQYTgNOdKcw2ElSadCWo7syfh49jGuo0BUZll5yMUBUnnzsZNTTe67BEaAsFrEALw_wcB">Hamilton MicroLab Prep</a>, <a href="https://www.molecular.abbott/int/en/products/infectious-disease/alinity-m-product-overview">Abbot Alinity M-series</a>, <a href="https://www.agilent.com/en/product/automated-liquid-handling/automated-liquid-handling-platforms/bravo-automated-liquid-handling-platform?gclid=Cj0KCQjw9fqnBhDSARIsAHlcQYT4tlkqWHsEdycMbE34UlIJZjqsSDsd_x6BO78jti0YxGHsyJA349kaAuHuEALw_wcB&gclsrc=aw.ds">Agilent Bravo</a>)
               </p>
-              <div class="line-mf"></div>
+              <p>
+              <b>Decapping Stations:</b> (<a href="https://scinomix.com/product/sci-print-vxl">Scinomix VXL</a>, <a href="https://healthcare-in-europe.com/en/labbook/automation-sample-processing/2242-sarstedt-decapper-dc-1200-recapper-rc-1200.html">SARSTEDT Decapper DC1200</a>)
+              </p>
+              <p>
+              <b>Extraction:</b> (<a href="https://www.thermofisher.com/us/en/home/life-science/dna-rna-purification-analysis/automated-purification-extraction/kingfisher-systems/models/kingfisher-flex.html">Thermo Scientific: KingFisher Flex</a>)
+              </p>
+              <p>
+              <b>PCR WorkStations:</b> (<a href="https://www.bio-rad.com/en-us/product/cfx384-touch-real-time-pcr-detection-system?ID=LJB22YE8Z">Bio-Rad PCR System Model CFX384</a>)
+              </p>
+              <p>
+              <b>Fluid Verification:</b> (<a href="https://www.artel.co/products/mvs-multichannel-verification-system/">ARTEL MVS</a>)
+              </p>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-robot"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Laboratory Automation</h2>
-                <p class="s-description text-center">
-                  Script development for automated platforms, integration with LIMS databases, liquid class development, and high-throughput assay optimization.
-                </p>
-                <p>
-                  Robotic Liquid Handling Platforms: (<a href="https://www.hamiltoncompany.com/automated-liquid-handling/platforms/microlab-star">Hamilton STAR</a> / <a href="https://www.hamiltoncompany.com/automated-liquid-handling/assay-ready-workstations/aliquot-starlet">STARlet</a>, <a href="https://www.hamiltoncompany.com/automated-liquid-handling/platforms/microlab-prep?utm_source=adwords&utm_medium=ppc&utm_campaign=Robotics&utm_term=&hsa_tgt=dsa-2253628232837&hsa_grp=152991030636&hsa_mt=&hsa_cam=20503675415&hsa_ver=3&hsa_src=g&hsa_net=adwords&hsa_kw=&hsa_acc=3619911770&hsa_ad=671885825925&gclid=Cj0KCQjw9fqnBhDSARIsAHlcQYTgNOdKcw2ElSadCWo7syfh49jGuo0BUZll5yMUBUnnzsZNTTe67BEaAsFrEALw_wcB">Hamilton MicroLab Prep</a>, <a href="https://www.molecular.abbott/int/en/products/infectious-disease/alinity-m-product-overview">Abbot Alinity M-series</a>, <a href="https://www.agilent.com/en/product/automated-liquid-handling/automated-liquid-handling-platforms/bravo-automated-liquid-handling-platform?gclid=Cj0KCQjw9fqnBhDSARIsAHlcQYT4tlkqWHsEdycMbE34UlIJZjqsSDsd_x6BO78jti0YxGHsyJA349kaAuHuEALw_wcB&gclsrc=aw.ds">Agilent Bravo</a>)
-                </p>
-                <p>
-                  Decapping Stations: (<a href="https://scinomix.com/product/sci-print-vxl">Scinomix VXL</a>, <a href="https://healthcare-in-europe.com/en/labbook/automation-sample-processing/2242-sarstedt-decapper-dc-1200-recapper-rc-1200.html">SARSTEDT Decapper DC1200</a>)
-                </p>
-                <p>
-                  Extraction: (<a href="https://www.thermofisher.com/us/en/home/life-science/dna-rna-purification-analysis/automated-purification-extraction/kingfisher-systems/models/kingfisher-flex.html">Thermo Scientific: KingFisher Flex</a>)
-                </p>
-                <p>
-                  PCR WorkStations: (<a href="https://www.bio-rad.com/en-us/product/cfx384-touch-real-time-pcr-detection-system?ID=LJB22YE8Z">Bio-Rad PCR System Model CFX384</a>)
-                </p>
-                <p>
-                  Fluid Verification: (<a href="https://www.artel.co/products/mvs-multichannel-verification-system/">ARTEL MVS</a>)
-                </p>
-              </div>
+
+        <!-- General Script Development -->
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico"><span class="ico-circle"><i class="bi bi-code-square"></i></span></div>
+            <div class="service-content">
+              <h2 class="s-title">General Script Development</h2>
+              <p class="s-description text-center">Proficient in exploratory data analysis projects, encompassing data mining and SIR modeling for disease.</p>
+              <p><b>Software:</b> Python, R, SPSS, NetLogo (Agent-based Modeling), MS Excel/Access VBA Macros</p>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-code-square"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">General Script Development</h2>
-                <p class="s-description text-center">
-                  Exploratory data analysis projects including data mining and SIR modeling for disease.
-                </p>
-                <p>
-                  Python, R, SPSS, NetLogo (Agent-based Modeling), MS Excel/Access VBA Macros
-                </p>
-              </div>
+        </div>
+
+        <!-- SQL Database Management -->
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico"><span class="ico-circle"><i class="bi bi-database"></i></span></div>
+            <div class="service-content">
+              <h2 class="s-title">SQL Database Management</h2>
+              <p class="s-description text-center">Expertise in constructing native queries in SQL-based languages to extract actionable insights for data-driven decision-making.</p>
+              <p><b>Databases:</b> MSSQL Server, Oracle SQL, SQLite, BigQuery</p>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-database"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">SQL Database Management</h2>
-                <p class="s-description text-center">
-                  Constructing native queries in SQL-based languages to draw insights for data and reporting.
-                </p>
-                <p>
-                  MSSQL Server, Oracle SQL, SQLite, BigQuery
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-graph-up"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Data Vizualization</h2>
-                <p class="s-description text-center">
-                  Dashboard Creation
-                </p>
-                <p>
-                  R, R-shiny, Python, Microsoft Power Platform (PowerBI, PowerAutomate, SharePoint), MetaBase
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-bug"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Script Debugging</h2>
-                <p class="s-description text-center">
-                  Revise pre-existing scripts and troubleshoot errors as needed.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-bag-check-fill"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Script Validation</h2>
-                <p class="s-description text-center">
-                  Experienced in designing and executing robust validation plans to execute functionality of code projects and common CI/CD practices.
-                </p>
-              </div>
+        </div>
+
+        <!-- Data Visualization -->
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico"><span class="ico-circle"><i class="bi bi-graph-up"></i></span></div>
+            <div class="service-content">
+              <h2 class="s-title">Data Visualization</h2>
+              <p class="s-description text-center">Crafting impactful dashboards for comprehensive data representation.</p>
+              <p><b>Technologies:</b> R, R-shiny, Python, Microsoft Power Platform (PowerBI, PowerAutomate, SharePoint), MetaBase</p>
             </div>
           </div>
         </div>
       </div>
-    </section><!-- End Services Section -->
+    </div>
+  </section>
+  <!-- End Professional Services Section -->
 
     <!-- ======= Counter Section ======= -->
     <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/science/Cell_img2.jpg)">
@@ -293,7 +278,6 @@
               <div class="counter-ico">
                 <span class="ico-circle"><i class="bi bi-check"></i></span>
               </div>
-              <!--might want to hold on this for now-->
               <div class="counter-num">
                 <p data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="counter purecounter"></p>
                 <span class="counter-text">PROJECTS COMPLETED</span>
@@ -338,176 +322,262 @@
     </div>
     <!-- End Counter Section -->
 
-    <!-- ======= Portfolio Section ======= -->
-    <section id="work" class="portfolio-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Portfolio
-              </h3>
-              <p class="subtitle-a">
-                Public-facing coding projects code samples.
-              </p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/soft-lang/python.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/soft-lang/python.png" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Python</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory"><a href="https://github.com/eyefixcode/Py">Link Source Code Repository</a></span> / <span class="w-date">12 Sep. 2023</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/soft-lang/R.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/soft-lang/R.png" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">R/R-Studio</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory"><a href="https://github.com/eyefixcode/RStudio">Link Source Code Repository</a></span> / <span class="w-date">12 Sep. 2023</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/soft-lang/SQL.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/soft-lang/SQL.png" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">SQL</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Link Source Code Repository</span> / <span class="w-date">12 Sep. 2023</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+<!-- ======= Portfolio Section ======= -->
+<section id="work" class="portfolio-mf sect-pt4 route">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="title-box text-center">
+          <h3 class="title-a">
+            Portfolio
+          </h3>
+          <p class="subtitle-a">
+            Explore my public-facing coding projects and code samples.
+          </p>
+          <div class="line-mf"></div>
         </div>
       </div>
-    </section>
-    <!-- End Portfolio Section -->
+    </div>
+    <div class="row">
+      <!-- Project Cards -->
+      <div class="col-md-3">
+        <!-- Card for Python Project -->
+        <div class="work-box">
+          <a href="assets/img/soft-lang/python.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+            <div class="work-img">
+              <img src="assets/img/soft-lang/python.png" alt="Python Project" class="img-fluid">
+            </div>
+          </a>
+          <div class="work-content">
+            <div class="row">
+              <div class="col-sm-8">
+                <h2 class="w-title">Python Project</h2>
+                <div class="w-more">
+                  <span class="w-ctegory"><a href="https://github.com/eyefixcode/Python">GitHub Repository</a></span>
+                </div>
+                </div>
+              <div class="col-sm-4">
+                <div class="w-like">
+                  <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <!-- ======= Experience Section ======= -->
-    <section id="work" class="portfolio-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="pt-4 pt-md-0">
-            <div class="title-box">
-              <h5 class="title-a text-center">
-                Software Tools
-              </h5>
+      <!-- Card for R/R-Studio Project -->
+      <div class="col-md-3">
+        <div class="work-box">
+          <a href="assets/img/soft-lang/R.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+            <div class="work-img">
+              <img src="assets/img/soft-lang/R.png" alt="R/R-Studio Project" class="img-fluid">
             </div>
-            <p class="lead">
-            <div style="width: flex; float:left; height:flex; background:rgba(128, 128, 128, 0.185); margin:30px">
-              <ul><b>
-              Preferred IDEs:</b>
-                <li>Microsoft VSCode</li>
-                <li>Jupyter Notebook</li>
-                <li>R-Studio</li>
-              </ul>
-              <ul><b>
-              Commonly Used Python Libraries:</b>
-                <li>Pandas</li>
-                <li>Numpy</li>
-                <li>Plotly</li>
-                <li>SQLite3</li>
-                <li>Matplotlib</li>
-                <li>SciPy</li>
-              </ul>  
-              <ul><b>
-              Commonly Used R Packages:</b>
-                <li>Shiny</li>
-                <li>R Markdown</li>
-                <li>ggPlot</li>
-                <li>dplyr</li>
-                <li>TukeyHSD</li>
-              </ul> 
+          </a>
+          <div class="work-content">
+            <div class="row">
+              <div class="col-sm-8">
+                <h2 class="w-title">R/R-Studio Project</h2>
+                <div class="w-more">
+                  <span class="w-ctegory"><a href="https://github.com/eyefixcode/RStudio">GitHub Repository</a></span>
+                </div>
+                </div>
+              <div class="col-sm-4">
+                <div class="w-like">
+                  <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                </div>
               </div>
-              <div style="width: flex; float:left; height:flex; background:rgba(128, 128, 128, 0.185); margin:30px">
-              <ul><b>
-                SQL Versions:</b>
-                <li>SQLite</li>
-                <li>Microsoft SQL Server 2006 (MSSQL)</li>
-                <li>Oracle SQL</li>
-                <li>Snowflake</li>
-                <li>BigQuery</li>
-              </ul>
-              <ul><b>
-                Business Intelligence Platforms</b>
-                <li>Microsoft Power BI</li>
-                <li>Microsoft Excel Online Office 365</li>
-                <li>Metabase</li>
-                <li>Looker</li>
-              </ul>
             </div>
-            <div style="width: flex; float:left; height:flex; background:rgba(128, 128, 128, 0.185); margin:30px">
-              <ul><b>
-                Windows</b>
-                <li>Terminal CMD Prompt Scripting</li>
-                <li>Powershell</li>
-                <li>Batch (.bat) File Creation</li>
-                <li>Automated Task Scheduler</li>
-              </ul>
-              <ul><b>
-                Mac</b>
-                <li>(.bash/.sh) File Creation and Terminal Scripting</li>
-              </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card for SQL Project -->
+      <div class="col-md-3">
+        <div class="work-box">
+          <a href="assets/img/soft-lang/SQL.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+            <div class="work-img">
+              <img src="assets/img/soft-lang/SQL.png" alt="SQL Project" class="img-fluid">
             </div>
-            <div></div>
+          </a>
+          <div class="work-content">
+            <div class="row">
+              <div class="col-sm-8">
+                <h2 class="w-title">SQL Project</h2>
+                <div class="w-more">
+                  <span class="w-ctegory"><a href="https://github.com/eyefixcode/SQL">GitHub Repository</a></span>
+                </div>
+                </div>
+              <div class="col-sm-4">
+                <div class="w-like">
+                  <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card for SPSS Project -->
+      <div class="col-md-3">
+        <div class="work-box">
+          <a href="assets/img/soft-lang/SPSS.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+            <div class="work-img">
+              <img src="assets/img/soft-lang/spss_logo.png" alt="SPSS Project" class="img-fluid">
+            </div>
+          </a>
+          <div class="work-content">
+            <div class="row">
+              <div class="col-sm-8">
+                <h2 class="w-title">SPSS Project</h2>
+                <div class="w-more">
+                  <span class="w-ctegory"><a href="https://github.com/eyefixcode/SPSS">GitHub Repository</a></span>
+                </div>
+                </div>
+              <div class="col-sm-4">
+                <div class="w-like">
+                  <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add three more cards for a total of four in each row -->
+      <!-- Repeat the above card structure for PowerBI Dashboards Project -->
+
+      <!-- Card for PowerBI Dashboards Project -->
+      <div class="col-md-3">
+        <div class="work-box">
+          <a href="assets/img/soft-lang/PowerBI.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+            <div class="work-img">
+              <img src="assets/img/soft-lang/pbi_logo.png" alt="PowerBI Dashboards Project" class="img-fluid">
+            </div>
+          </a>
+          <div class="work-content">
+            <div class="row">
+              <div class="col-sm-8">
+                <h2 class="w-title">PowerBI Dashboards Project</h2>
+                <div class="w-more">
+                  <span class="w-ctegory"><a href="https://github.com/eyefixcode/PowerBI">GitHub Repository</a></span>
+                </div>
+                </div>
+              <div class="col-sm-4">
+                <div class="w-like">
+                  <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Portfolio Section -->
+
+<!-- ======= Experience Section ======= -->
+<section id="work" class="portfolio-mf sect-pt4 route">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="title-box">
+          <h5 class="title-a text-center">
+            Software Tools
+          </h5>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Preferred IDEs</h4>
+            <p class="card-text">
+              Microsoft VSCode<br>
+              Jupyter Notebook<br>
+              R-Studio
             </p>
-            <p class="lead">
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Commonly Used Python Libraries</h4>
+            <p class="card-text">
+              Pandas<br>
+              Numpy<br>
+              Plotly<br>
+              SQLite3<br>
+              Matplotlib<br>
+              SciPy
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Commonly Used R Packages</h4>
+            <p class="card-text">
+              Shiny<br>
+              R Markdown<br>
+              ggPlot<br>
+              dplyr<br>
+              TukeyHSD
             </p>
           </div>
         </div>
       </div>
-    </section>
-    <!-- End Experience Section -->
-    <!-- ======= Education Section ======= -->
-    <!-- End Education Section -->
+      <div class="col-md-4 col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">SQL Versions</h4>
+            <p class="card-text">
+              SQLite<br>
+              Microsoft SQL Server 2006 (MSSQL)<br>
+              Oracle SQL<br>
+              Snowflake<br>
+              BigQuery
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Business Intelligence Platforms</h4>
+            <p class="card-text">
+              Microsoft Power BI<br>
+              Microsoft Excel Online Office 365<br>
+              Metabase<br>
+              Looker
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Windows</h4>
+            <p class="card-text">
+              Terminal CMD Prompt Scripting<br>
+              Powershell<br>
+              Batch (.bat) File Creation<br>
+              Automated Task Scheduler
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Mac</h4>
+            <p class="card-text">
+              (.bash/.sh) File Creation and Terminal Scripting
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Experience Section -->
+
+<!-- ======= Education Section ======= -->
+<!-- End Education Section -->
     
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/Automation/Pipette_img2.jpg)">
@@ -525,34 +595,76 @@
                                       </h5>
                                   </div>
                                   <div>
+                                    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
                                       <form id="myForm" action="https://formspree.io/f/mwkdqeyp" method="POST" role="form" class="php-email-form" onsubmit="closeForm()">
                                           <div class="row">
                                               <div class="col-md-12 mb-3">
-                                                  <div class="form-group">
-                                                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                                                  </div>
+                                                <div class="form-group">
+                                                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                                                </div>
                                               </div>
                                               <div class="col-md-12 mb-3">
-                                                  <div class="form-group">
-                                                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                                                  </div>
+                                                <div class="form-group">
+                                                    <input type="tel" class="form-control" name="phone" id="phone" placeholder="Phone Number" required>
+                                                </div>
                                               </div>
+                                              <script>
+                                                $(document).ready(function() {
+                                                    $('#phone').on('input', function() {
+                                                        // Remove any non-digit characters
+                                                        var phoneNumber = $(this).val().replace(/\D/g, '');
+                                            
+                                                        // Ensure the phone number does not exceed 10 digits
+                                                        phoneNumber = phoneNumber.slice(0, 10);
+                                            
+                                                        // Add hyphens to format the phone number
+                                                        if (phoneNumber.length > 3) {
+                                                            phoneNumber = phoneNumber.slice(0, 3) + '-' + phoneNumber.slice(3);
+                                                        }
+                                                        if (phoneNumber.length > 7) {
+                                                            phoneNumber = phoneNumber.slice(0, 7) + '-' + phoneNumber.slice(7);
+                                                        }
+                                            
+                                                        // Update the input value
+                                                        $(this).val(phoneNumber);
+                                                    });
+                                                });
+                                              </script>
                                               <div class="col-md-12 mb-3">
-                                                  <div class="form-group">
-                                                      <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                                                  </div>
+                                                <div class="form-group">
+                                                    <input type="email" class="form-control" name="email" id="email" placeholder="Email Address" required>
+                                                </div>
+                                              </div>
+                                              <script>
+                                                $(document).ready(function() {
+                                                    $('#email').on('input', function() {
+                                                        var emailAddress = $(this).val();
+                                            
+                                                        // Remove spaces and update the input value
+                                                        $(this).val(emailAddress.replace(/\s/g, ''));
+                                            
+                                                        if (emailAddress.indexOf('@') === 0) {
+                                                            // If @ is the first character, clear the input value
+                                                            $(this).val('');
+                                                        }
+                                                    });
+                                                });
+                                              </script>
+                                              <div class="col-md-12 mb-3">
+                                                <div class="form-group">
+                                                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                                                </div>
                                               </div>
                                               <div class="col-md-12">
-                                                  <div class="form-group">
-                                                      <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                                                  </div>
+                                                <div class="form-group">
+                                                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                                                </div>
                                               </div>
                                               <div class="col-md-12 text-center my-3">
-                                                  <div class="loading">Loading</div>
-                                                  <div class="error-message"></div>
-                                                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                                                <div class="loading">Loading</div>
+                                                <div class="error-message"></div>
+                                                <div class="sent-message">Your message has been sent. Thank you!</div>
                                               </div>
-  
                                               <div class="col-md-12 text-center">
                                                   <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
                                               </div>
@@ -575,6 +687,7 @@
                                     <ul>
                                         <!-- <li><a href=""><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li> -->
                                         <li><a href="https://www.linkedin.com/in/james-bryce-settles-99675013a/"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
+                                        <li><a href="https://github.com/eyefixcode"><span class="ico-circle"><i class="bi bi-github"></i></span></a></li>
                                         <li><a href="https://twitter.com/i/flow/login?redirect_after_login=%2Feyefixcode"><span class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
                                         <li><a href="https://www.instagram.com/iceybrycie/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
                                     </ul>
