@@ -57,10 +57,11 @@
       
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li> 
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about" onclick="navigateToSection(event, 'about')">About</a></li>          
+          <li><a class="nav-link scrollto" href="index.html#services" onclick="navigateToSection(event, 'services')">Services</a></li>
+          <li><a class="nav-link" href="coursework.html">Coursework</a></li>
+          <li><a class="nav-link scrollto" href="index.html#contact" onclick="navigateToSection(event, 'contact')">Contact</a></li>
           <li><a class="nav-link" href="assets/resume/Resume_Settles.pdf"><span class="bi bi-filetype-pdf"> <b>Resume</b></i></span></a></li>      
         </ul>
         <ul>
@@ -70,8 +71,12 @@
           <ul>
               <li><a href="https://www.linkedin.com/in/james-bryce-settles-99675013a/"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
               <li><a href="https://github.com/eyefixcode"><span class="ico-circle"><i class="bi bi-github"></i></span></a></li>
+              <!--
               <li><a href="https://twitter.com/i/flow/login?redirect_after_login=%2Feyefixcode"><span class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
+              -->
+              <!--
               <li><a href="https://www.instagram.com/iceybrycie/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
+              -->
           </ul>
         </div>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -106,7 +111,10 @@
                 <div class="row">
                   <div class="col-sm-6 col-md-5">
                     <div class="about-img">
-                      <img src="assets/img/profile/prof.JPG" style="border-radius: 50%;width: 250px;height: 250px;" class="img-fluid b-shadow-a" alt="Profile Image">
+                      <img src="assets/img/profile/prof.JPG" 
+     class="img-fluid b-shadow-a" 
+     style="border-radius: 50%; width: 250px; height: 250px; object-fit: contain;" 
+     alt="Profile Image">
                     </div>
                   </div>
                   <div class="col-sm-6 col-md-7">
@@ -114,7 +122,7 @@
                       <p><span class="title-s">Name: </span> James Settles</p>
                       <p><span class="title-s">Profile: </span> Data Scientist / Consultant</p>
                       <p><span class="title-s">Email: </span> <a href="mailto: settles.james.b@gmail.com" style="color:blue;">settles.james.b@gmail.com</a></p>
-                      <p><span class="title-s">Github: </span> <a href="https://github.com/eyefixcode" style="color:blue;">eyefixcode</a> </p>
+                      <p><span class="title-s">Github: </span> <a href="https://github.com/eyefixcode" style="color:blue;"><b>@ </b>eyefixcode</a> </p>
                     </div>
                   </div>
                 </div>
@@ -124,12 +132,11 @@
                   <div class="title-box-2">
                     <h5 class="title-left">About Me</h5>
                   </div>
-                  <p class="lead">Proficient in utilizing <b>Python</b>, <b>SQL</b>, <b>SPSS</b>, and <b>R</b> for data analysis and visualization.</p>
+                  <p class="lead">Proficient in utilizing <b>Python</b>, <b>SQL</b>, <b>SPSS</b>, <b>SAS</b>, <b>STATA</b>, and <b>R</b> for data analysis and visualization.</p>
+                  <p class="lead">With 4 years of professional experience in software development, I specialize in supporting lab automation and data science initiatives.</p>
                   <p class="lead">Current Master of Public Health (MPH) candidate at <a href="https://keck.usc.edu/"><b>USC Keck School of Medicine</b></a> with a Biostatistics and Epidemiology concentration.</p>
                   <p class="lead">Received Bachelor of Science (BS) degree in Biology from <a href="https://vcu.edu/"><b>Virginia Commonwealth University</b></a> in 2019.</p>
-                  <p class="lead">With 4 years of professional experience in software development, I specialize in supporting data science and analysis initiatives.</p>
-                  <p class="lead">I have succeeded in creating dashboards with business intelligence tools, integrating automation into workflows, and implementing software solutions which support business initiatives.</p>
-                  <p class="lead">Always eager to find new opportunites to collaborate and leverage data to promote health equity and drive innovation within healthcare.</p>          
+                  
                 </div>
               </div>
             </div>
@@ -348,7 +355,7 @@
       <div class="col-md-3">
         <!-- Card for Python Project -->
         <div class="work-box">
-          <a href="assets/img/soft-lang/python.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+          <a href="https://github.com/eyefixcode/Python">
             <div class="work-img">
               <img src="assets/img/soft-lang/python.png" alt="Python Project" class="img-fluid">
             </div>
@@ -356,14 +363,14 @@
           <div class="work-content">
             <div class="row">
               <div class="col-sm-8">
-                <h2 class="w-title">Python Project</h2>
+                <h2 class="w-title">Python</h2>
                 <div class="w-more">
                   <span class="w-ctegory"><a href="https://github.com/eyefixcode/Python">GitHub Repository</a></span>
                 </div>
                 </div>
               <div class="col-sm-4">
                 <div class="w-like">
-                  <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                  <a href="https://github.com/eyefixcode/Python"> <span class="bi bi-plus-circle"></span></a>
                 </div>
               </div>
             </div>
@@ -374,7 +381,7 @@
       <!-- Card for R/R-Studio Project -->
       <div class="col-md-3">
         <div class="work-box">
-          <a href="assets/img/soft-lang/R.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+          <a href="https://github.com/eyefixcode/RStudio">
             <div class="work-img">
               <img src="assets/img/soft-lang/R.png" alt="R/R-Studio Project" class="img-fluid">
             </div>
@@ -382,14 +389,14 @@
           <div class="work-content">
             <div class="row">
               <div class="col-sm-8">
-                <h2 class="w-title">R/R-Studio Project</h2>
+                <h2 class="w-title">R</h2>
                 <div class="w-more">
                   <span class="w-ctegory"><a href="https://github.com/eyefixcode/RStudio">GitHub Repository</a></span>
                 </div>
                 </div>
               <div class="col-sm-4">
                 <div class="w-like">
-                  <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                  <a href="https://github.com/eyefixcode/RStudio"> <span class="bi bi-plus-circle"></span></a>
                 </div>
               </div>
             </div>
@@ -400,22 +407,22 @@
       <!-- Card for SQL Project -->
       <div class="col-md-3">
         <div class="work-box">
-          <a href="assets/img/soft-lang/SQL.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+          <a href="https://github.com/eyefixcode/SQL">
             <div class="work-img">
-              <img src="assets/img/soft-lang/SQL.png" alt="SQL Project" class="img-fluid">
+              <img src="assets/img/soft-lang/SQL.png" alt="SQL" class="img-fluid">
             </div>
           </a>
           <div class="work-content">
             <div class="row">
               <div class="col-sm-8">
-                <h2 class="w-title">SQL Project</h2>
+                <h2 class="w-title">SQL</h2>
                 <div class="w-more">
                   <span class="w-ctegory"><a href="https://github.com/eyefixcode/SQL">GitHub Repository</a></span>
                 </div>
                 </div>
               <div class="col-sm-4">
                 <div class="w-like">
-                  <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                  <a href="https://github.com/eyefixcode/SQL"> <span class="bi bi-plus-circle"></span></a>
                 </div>
               </div>
             </div>
@@ -426,7 +433,7 @@
       <!-- Card for SPSS Project -->
       <div class="col-md-3">
         <div class="work-box">
-          <a href="assets/img/soft-lang/SPSS.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+          <a href="https://github.com/eyefixcode/SPSS">
             <div class="work-img">
               <img src="assets/img/soft-lang/spss_logo.png" alt="SPSS Project" class="img-fluid">
             </div>
@@ -434,14 +441,14 @@
           <div class="work-content">
             <div class="row">
               <div class="col-sm-8">
-                <h2 class="w-title">SPSS Project</h2>
+                <h2 class="w-title">SPSS</h2>
                 <div class="w-more">
                   <span class="w-ctegory"><a href="https://github.com/eyefixcode/SPSS">GitHub Repository</a></span>
                 </div>
                 </div>
               <div class="col-sm-4">
                 <div class="w-like">
-                  <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                  <a href="https://github.com/eyefixcode/SPSS"> <span class="bi bi-plus-circle"></span></a>
                 </div>
               </div>
             </div>
@@ -452,7 +459,7 @@
       <!-- Add three more cards for a total of four in each row -->
       <!-- Repeat the above card structure for PowerBI Dashboards Project -->
 
-      <!-- Card for PowerBI Dashboards Project -->
+      <!-- Card for PowerBI Dashboards Project 
       <div class="col-md-3">
         <div class="work-box">
           <a href="assets/img/soft-lang/PowerBI.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
@@ -480,6 +487,8 @@
     </div>
   </div>
 </section>
+
+-->
 <!-- End Portfolio Section -->
 
     
@@ -592,8 +601,10 @@
                                         <!-- <li><a href=""><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li> -->
                                         <li><a href="https://www.linkedin.com/in/james-bryce-settles-99675013a/"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
                                         <li><a href="https://github.com/eyefixcode"><span class="ico-circle"><i class="bi bi-github"></i></span></a></li>
+                                        <!--
                                         <li><a href="https://twitter.com/i/flow/login?redirect_after_login=%2Feyefixcode"><span class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
                                         <li><a href="https://www.instagram.com/iceybrycie/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
+                                      -->
                                     </ul>
                                   </div>
                                   <div class="more-info">
@@ -618,7 +629,13 @@
   </main><!-- End #main -->
 
 
- 
+  <!-- ======= Footer ======= -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 James Settles. All Rights Reserved.</p>
+    </div>
+  </footer>
+
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
