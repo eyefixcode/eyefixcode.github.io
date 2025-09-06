@@ -222,6 +222,7 @@ a:hover {
   box-shadow: 0 0 0 3px #0078ff;
   transition: all 500ms ease;
   margin: 0 15px 0 0;
+  color: #fff;
 }
 
 .socials .ico-circle i {
@@ -238,6 +239,7 @@ a:hover {
   box-shadow: 0 0 0 3px #cde1f8;
   transition: all 500ms ease;
 }
+
 
 /*------/ Ul resect /------*/
 .ul-resect,
