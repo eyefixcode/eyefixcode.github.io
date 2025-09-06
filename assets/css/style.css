@@ -1048,6 +1048,11 @@ a:hover {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .work-box:hover img {
@@ -1055,12 +1060,18 @@ a:hover {
 }
 
 .work-img {
-  display: block;
-  overflow: hidden;
+  height: 150px; /* Consistent height for all */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
 .work-img img {
-  transition: all 1s;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .work-content {
@@ -1239,6 +1250,13 @@ a:hover {
 
 .contact-mf {
   margin-top: 4rem;
+}
+
+.box-shadow-full {
+  margin-top: 4rem;
+  border-radius: 16px;
+  background-color: white; /* or your chosen background */
+  padding: 2rem;
 }
 
 @media (min-width: 767px) {
