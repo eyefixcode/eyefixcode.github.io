@@ -93,9 +93,6 @@ a:hover {
 
 .overlay-mf {
   background-color: #0078ff;
-}
-
-.overlay-mf {
   position: absolute;
   top: 0;
   left: 0px;
@@ -610,6 +607,54 @@ a:hover {
     left: -100%;
   }
 }
+
+/* Ensure central nav is centered inside flex layout */
+.nav-center {
+  list-style: none;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+/* Basic nav link styling */
+.nav-center li a,
+.nav-right .nav-link {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-center li a:hover,
+.nav-right .nav-link:hover {
+  color: #00bfff;
+}
+
+/* Social icon spacing */
+.nav-right a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+}
+
+.ico-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 4px solid #007bff; /* bright blue */
+  transition: 0.3s;
+}
+
+.ico-circle i {
+  font-size: 18px;
+}
+
 
 /**
 * Mobile Navigation 
