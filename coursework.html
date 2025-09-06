@@ -20,6 +20,8 @@
 </head>
 
 <body>
+  <!-- Particle Background --> 
+  <div id="particles-js-hero"></div>
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top" style="background: rgba(0, 0, 0, 0.9); padding: 12px 0;">
@@ -87,6 +89,11 @@
     <!-- End Coursework Section -->
   </main>
 
+  <div>
+    <ul>
+      <li> <!--SPACE AFTER COURSEWORK -->   </li>
+    </ul>
+  </div>
   <!-- ======= Footer ======= -->
   <footer>
     <div class="container">
@@ -102,5 +109,48 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <!-- Particle JS -->
+  <!-- Load particles.js library -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+ <!-- Custom particles.js config -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const config = {
+        particles: {
+          number: { value: 80, density: { enable: true, value_area: 800 } },
+          color: { value: "#00d4ff" },
+          shape: { type: "circle" },
+          opacity: { value: 0.8, random: false },
+          size: { value: 3, random: true },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#00d4ff",
+            opacity: 0.6,
+            width: 1.5
+          },
+          move: { enable: true, speed: 2, random: true }
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: { enable: true, mode: "repulse" },
+            onclick: { enable: true, mode: "push" },
+            resize: true
+          },
+          modes: {
+            repulse: { distance: 100, duration: 0.4 },
+            push: { particles_nb: 4 }
+          }
+        },
+        retina_detect: true
+      };
+
+      // Apply to multiple sections if needed
+      particlesJS('particles-js-hero', config);
+      particlesJS('particles-js-counter', config);
+      particlesJS('particles-js-contact', config);
+    });
+  </script>
 </body>
 </html>

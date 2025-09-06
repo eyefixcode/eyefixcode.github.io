@@ -52,9 +52,7 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
-
-      <h1 class="logo"><a href="index.html">James Settles</a></h1>
-      
+      <h1 class="logo"><a href="index.html">James Settles</a></h1>     
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto" href="index.html">Home</a></li>
@@ -71,13 +69,8 @@
           <ul>
               <li><a href="https://www.linkedin.com/in/james-settles/"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
               <li><a href="https://github.com/eyefixcode"><span class="ico-circle"><i class="bi bi-github"></i></span></a></li>
-              <!--
-              <li><a href="https://twitter.com/i/flow/login?redirect_after_login=%2Feyefixcode"><span class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
-              -->
-              <!--
-              <li><a href="https://www.instagram.com/iceybrycie/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
-              -->
-          </ul>
+              <li></li>
+            </ul>
         </div>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -86,118 +79,77 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/DataScience/Data-Science-Concepts.jpg); height: 400px;">
-    <div class="overlay-itro"></div>
-    <div class="hero-content display-table">
-      <div class="table-cell">
-        <div class="container">
-          <h1 class="hero-title mb-4"> I am James Settles ...</h1>
-          <p class="hero-subtitle"><span class="typed" data-typed-items="Data Scientist, Automation Engineer, Software Developer"></span></p>
+  <div id="hero-wrapper">
+    <!-- Particle Background -->
+    <div id="particles-js-hero"></div>
+
+    <!-- Hero Content Layer -->
+    <div id="hero" class="hero">
+      <div class="overlay-itro"></div>
+      <div class="hero-content">
+          <div class="container text-center">
+            <h1 class="hero-title mb-4">I am James Settles ...</h1>
+            <p class="hero-subtitle">
+              <span class="typed" data-typed-items="Data Scientist, Public Health Professional, Automation Engineer, Software Developer, Biostatistician"></span>
+            </p>
         </div>
       </div>
     </div>
-  </div><!-- End Hero Section -->
+  </div>
 
   <main id="main">
 
   <!-- ======= About Section ======= -->
   <section id="about" class="about-mf sect-pt4 route">
-    <div class="container" style="height:flex">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="box-shadow-full">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="row">
-                  <div class="col-sm-6 col-md-5">
-                    <div class="about-img">
-                      <img src="assets/img/profile/prof.JPG" 
-     class="img-fluid b-shadow-a" 
-     style="border-radius: 50%; width: 250px; height: 250px; object-fit: contain;" 
-     alt="Profile Image">
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-md-7">
-                    <div class="about-info">
-                      <p><span class="title-s">Name: </span> James Settles</p>
-                      <p><span class="title-s">Profile: </span> Data Scientist / Consultant</p>
-                      <p><span class="title-s">Email: </span> <a href="mailto: settles.james.b@gmail.com" style="color:blue;">settles.james.b@gmail.com</a></p>
-                      <p><span class="title-s">Github: </span> <a href="https://github.com/eyefixcode" style="color:blue;"><b>@ </b>eyefixcode</a> </p>
-                    </div>
-                  </div>
-                </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-10 box-shadow-full p-4">
+          <div class="row">
+            <!-- Left Column: Image and Basic Info -->
+            <div class="col-md-5 d-flex flex-column align-items-center text-center mb-4 mb-md-0">
+              <div class="about-img mb-3">
+                <img src="assets/img/profile/prof.JPG"
+                    class="avatar-img"
+                    alt="Profile Image"/>
               </div>
-              <div class="col-md-6">
-                <div class="about-me pt-4 pt-md-0">
-                  <div class="title-box-2">
-                    <h5 class="title-left">About Me</h5>
-                  </div>
-                  <p class="lead">Proficient in utilizing <b>Python</b>, <b>SQL</b>, <b>SPSS</b>, <b>SAS</b>, <b>STATA</b>, and <b>R</b> for data analysis and visualization.</p>
-                  <p class="lead">With over 4 years of professional experience in software development, I specialize in supporting lab automation and data science initiatives.</p>
-                  <p class="lead">Master of Public Health (MPH) graduate from <a href="https://keck.usc.edu/"><b>USC Keck School of Medicine</b></a> with a focus in Biostatistics and Epidemiology.</p>
-                  <p class="lead">Received Bachelor of Science (BS) degree in Biology from <a href="https://vcu.edu/"><b>Virginia Commonwealth University</b></a> in 2019.</p>
-                  
-                </div>
+              <div class="about-info text-start w-100">
+                <p><span class="title-s">Name:</span> James Settles</p>
+                <p><span class="title-s">Profile:</span> Data Professional / Consultant</p>
+                <p><span class="title-s">Email:</span> 
+                  <a href="mailto:settles.james.b@gmail.com" class="text-primary">settles.james.b@gmail.com</a></p>
+                <p><span class="title-s">Github:</span> 
+                  <a href="https://github.com/eyefixcode" class="text-primary">@eyefixcode</a></p>
               </div>
             </div>
 
-
-
-            <!-- Fancy Skills Loading Bars
-            <div class="row mt-4">
-              <div class="col-md-6">
-                <div class="skill-mf">
-                  <p class="title-s"><span style="font-size: 30px; font-weight: bold">Skills</span></p>
-                  <div class="skill-item">
-                    <span><b>Python</b></span>
-                    <div class="progress progress-bar" id="progress-bar-85" role="progressbar" style="width: 85%; height: 20px;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><b>85%</b></div>
-                  </div>
-                  <div class="skill-item">
-                    <span><b>SQL</b></span>
-                    <div class="progress progress-bar" id="progress-bar-90" role="progressbar" style="width: 90%; height: 20px;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"><b>90%</b></div>
-                  </div>
-                  <div class="skill-item">
-                    <span><b>R</b></span>
-                    <div class="progress progress-bar" id="progress-bar-80" role="progressbar" style="width: 80%; height: 20px" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"><b>80%</b></div>
-                  </div>
-                  <div class="skill-item">
-                    <span><b>Data Visualization</b></span>
-                    <div class="progress progress-bar" id="progress-bar-90-2" role="progressbar" style="width: 90%; height: 20px;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"><b>90%</b></div>
-                  </div>
+            <!-- Right Column: About Me Text -->
+            <div class="col-md-7">
+              <div class="about-me pt-3 pt-md-0">
+                <div class="title-box-2 mb-3">
+                  <h5 class="title-left">About Me</h5>
                 </div>
+                <p class="lead">
+                  Proficient in utilizing <strong>Python</strong>, <strong>SQL</strong>, <strong>SPSS</strong>, <strong>SAS</strong>, <strong>STATA</strong>, and <strong>R</strong> for data analysis and visualization.
+                </p>
+                <p class="lead">
+                  With over 4 years of professional experience in software development, I specialize in supporting lab automation and data science initiatives.
+                </p>
+                <p class="lead">
+                  Master of Public Health (MPH) graduate from 
+                  <a href="https://keck.usc.edu/" target="_blank"><strong>USC Keck School of Medicine</strong></a> 
+                  with Biostatistics and Epidemiology concentration.
+                </p>
+                <p class="lead">
+                  Received Bachelor of Science (BS) degree in Biology from 
+                  <a href="https://vcu.edu/" target="_blank"><strong>Virginia Commonwealth University</strong></a> in 2019.
+                </p>
               </div>
             </div>
-            -->
-          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <script>
-    function animateProgressBar(elementId, width) {
-      var progressBar = document.getElementById(elementId);
-      var progress = 0;
 
-      function frame() {
-        if (progress >= width) {
-          clearInterval(id);
-        } else {
-          progress++;
-          progressBar.style.width = progress + '%';
-        }
-      }
-
-      var id = setInterval(frame, 20);
-    }
-
-    document.addEventListener('DOMContentLoaded', function () {
-      animateProgressBar('progress-bar-85', 85);
-      animateProgressBar('progress-bar-90', 90);
-      animateProgressBar('progress-bar-80', 80);
-      animateProgressBar('progress-bar-90-2', 90);
-    });
-  </script>
   <!-- End About Section -->
 
     <!-- ======= Professional Services Section ======= -->
@@ -280,59 +232,64 @@
   </section>
   <!-- End Professional Services Section -->
 
-    <!-- ======= Counter Section ======= -->
-    <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/science/Cell_img2.jpg)">
-      <div class="overlay-mf"></div>
-      <div class="container position-relative">
-        <div class="row">
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-check"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">PROJECTS COMPLETED</span>
-              </div>
+  <!-- ======= Counter Section ======= -->
+<div id="counter-wrapper" style="position: relative;">
+  <!-- Particle background -->
+  <div id="particles-js-counter" style="position: absolute; width: 100%; height: 100%; z-index: 1;"></div>
+
+  <!-- Counter content on top of particles -->
+  <div class="section-counter paralax-mf" style="position: relative; z-index: 2;">
+    <div class="overlay-mf"></div>
+    <div class="container position-relative">
+      <div class="row">
+        <div class="col-sm-3 col-lg-3">
+          <div class="counter-box pt-4 pt-md-0">
+            <div class="counter-ico">
+              <span class="ico-circle"><i class="bi bi-check"></i></span>
+            </div>
+            <div class="counter-num">
+              <p data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="counter purecounter"></p>
+              <span class="counter-text">PROJECTS COMPLETED</span>
             </div>
           </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-journal-richtext"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">YEARS OF EXPERIENCE</span>
-              </div>
+        </div>
+        <div class="col-sm-3 col-lg-3">
+          <div class="counter-box pt-4 pt-md-0">
+            <div class="counter-ico">
+              <span class="ico-circle"><i class="bi bi-journal-richtext"></i></span>
+            </div>
+            <div class="counter-num">
+              <p data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="counter purecounter"></p>
+              <span class="counter-text">YEARS OF EXPERIENCE</span>
             </div>
           </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-people"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">TOTAL CLIENTS</span>
-              </div>
+        </div>
+        <div class="col-sm-3 col-lg-3">
+          <div class="counter-box pt-4 pt-md-0">
+            <div class="counter-ico">
+              <span class="ico-circle"><i class="bi bi-people"></i></span>
+            </div>
+            <div class="counter-num">
+              <p data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="counter purecounter"></p>
+              <span class="counter-text">TOTAL CLIENTS</span>
             </div>
           </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-award"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">CLINICAL ASSAYS VALIDATED</span>
-              </div>
+        </div>
+        <div class="col-sm-3 col-lg-3">
+          <div class="counter-box pt-4 pt-md-0">
+            <div class="counter-ico">
+              <span class="ico-circle"><i class="bi bi-award"></i></span>
+            </div>
+            <div class="counter-num">
+              <p data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="counter purecounter"></p>
+              <span class="counter-text">CLINICAL ASSAYS VALIDATED</span>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- End Counter Section -->
+  </div>
+</div><!-- End Counter Section -->
 
 <!-- ======= Portfolio Section ======= -->
 <section id="work" class="portfolio-mf sect-pt4 route">
@@ -492,138 +449,110 @@
 <!-- End Portfolio Section -->
 
     
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/Automation/Pipette_img2.jpg)">
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" style="position: relative;">
+    <!-- Particle background -->
+    <div id="particles-js-contact" style="position: absolute; width: 100%; height: 100%; z-index: 1;"></div>
+
+    <!-- Contact content on top of particles -->
+    <section id="contact" class="paralax-mf footer-paralax sect-mt4 route" style="position: relative; z-index: 2;">
       <div class="overlay-mf"></div>
       <div class="container">
-          <div class="row">
-              <div class="col-sm-12">
-                  <div class="contact-mf">
-                      <div id="contact" class="box-shadow-full">
-                          <div class="row">
-                              <div class="col-md-6">
-                                  <div class="title-box-2">
-                                      <h5 class="title-left">
-                                          Contact Inquiry
-                                      </h5>
-                                  </div>
-                                  <div>
-                                    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-                                      <form id="myForm" action="https://formspree.io/f/mwkdqeyp" method="POST" role="form" class="php-email-form" onsubmit="closeForm()">
-                                          <div class="row">
-                                              <div class="col-md-12 mb-3">
-                                                <div class="form-group">
-                                                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                                                </div>
-                                              </div>
-                                              <div class="col-md-12 mb-3">
-                                                <div class="form-group">
-                                                    <input type="tel" class="form-control" name="phone" id="phone" placeholder="Phone Number" required>
-                                                </div>
-                                              </div>
-                                              <script>
-                                                $(document).ready(function() {
-                                                    $('#phone').on('input', function() {
-                                                        // Remove any non-digit characters
-                                                        var phoneNumber = $(this).val().replace(/\D/g, '');
-                                            
-                                                        // Ensure the phone number does not exceed 10 digits
-                                                        phoneNumber = phoneNumber.slice(0, 10);
-                                            
-                                                        // Add hyphens to format the phone number
-                                                        if (phoneNumber.length > 3) {
-                                                            phoneNumber = phoneNumber.slice(0, 3) + '-' + phoneNumber.slice(3);
-                                                        }
-                                                        if (phoneNumber.length > 7) {
-                                                            phoneNumber = phoneNumber.slice(0, 7) + '-' + phoneNumber.slice(7);
-                                                        }
-                                            
-                                                        // Update the input value
-                                                        $(this).val(phoneNumber);
-                                                    });
-                                                });
-                                              </script>
-                                              <div class="col-md-12 mb-3">
-                                                <div class="form-group">
-                                                    <input type="email" class="form-control" name="email" id="email" placeholder="Email Address" required>
-                                                </div>
-                                              </div>
-                                              <script>
-                                                $(document).ready(function() {
-                                                    $('#email').on('input', function() {
-                                                        var emailAddress = $(this).val();
-                                            
-                                                        // Remove spaces and update the input value
-                                                        $(this).val(emailAddress.replace(/\s/g, ''));
-                                            
-                                                        if (emailAddress.indexOf('@') === 0) {
-                                                            // If @ is the first character, clear the input value
-                                                            $(this).val('');
-                                                        }
-                                                    });
-                                                });
-                                              </script>
-                                              <div class="col-md-12 mb-3">
-                                                <div class="form-group">
-                                                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                                                </div>
-                                              </div>
-                                              <div class="col-md-12">
-                                                <div class="form-group">
-                                                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                                                </div>
-                                              </div>
-                                              <div class="col-md-12 text-center my-3">
-                                                <div class="loading">Loading</div>
-                                                <div class="error-message"></div>
-                                                <div class="sent-message">Your message has been sent. Thank you!</div>
-                                              </div>
-                                              <div class="col-md-12 text-center">
-                                                  <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
-                                              </div>
-                                          </div>
-                                      </form>
-                                      <div id="successMessage" class="col-md-12 text-center">
-                                          <div class="alert alert-success" role="alert">
-                                              Submission successful!
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="col-md-6">
-                                  <div class="title-box-2 pt-4 pt-md-0">
-                                      <h5 class="title-left">
-                                          Connect!
-                                      </h5>
-                                  </div>
-                                  <div class="socials">
-                                    <ul>
-                                        <!-- <li><a href=""><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li> -->
-                                        <li><a href="https://www.linkedin.com/in/james-settles-99675013a/"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
-                                        <li><a href="https://github.com/eyefixcode"><span class="ico-circle"><i class="bi bi-github"></i></span></a></li>
-                                        <!--
-                                        <li><a href="https://twitter.com/i/flow/login?redirect_after_login=%2Feyefixcode"><span class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
-                                        <li><a href="https://www.instagram.com/iceybrycie/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
-                                      -->
-                                    </ul>
-                                  </div>
-                                  <div class="more-info">
-                                      <p class="lead">
-                                        
-                                      </p>
-                                      <ul class="list-ico">
-                                          <li><span class="bi bi-geo-alt"></span> LOS ANGELES, CA 90008</li>
-                                          <!-- </1><li><span class="bi bi-phone"></span> (617) 557-0089</li> -->
-                                          <li><span class="bi bi-envelope"></span> <a href="mailto:settles.james.b@gmail.com">settles.james.b@gmail.com</a></li>
-                                      </ul>
-                                  </div>
-                              </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="contact-mf">
+              <div class="box-shadow-full">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="title-box-2">
+                      <h5 class="title-left">Contact Inquiry</h5>
+                    </div>
+                    <form id="myForm" action="https://formspree.io/f/mwkdqeyp" method="POST" role="form" class="php-email-form" onsubmit="closeForm()">
+                      <div class="row">
+                        <div class="col-md-12 mb-3">
+                          <div class="form-group">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
                           </div>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                          <div class="form-group">
+                            <input type="tel" class="form-control" name="phone" id="phone" placeholder="Phone Number" required>
+                          </div>
+                        </div>
+                        <script>
+                          $(document).ready(function () {
+                            $('#phone').on('input', function () {
+                              var phoneNumber = $(this).val().replace(/\D/g, '').slice(0, 10);
+                              if (phoneNumber.length > 3) phoneNumber = phoneNumber.slice(0, 3) + '-' + phoneNumber.slice(3);
+                              if (phoneNumber.length > 7) phoneNumber = phoneNumber.slice(0, 7) + '-' + phoneNumber.slice(7);
+                              $(this).val(phoneNumber);
+                            });
+                          });
+                        </script>
+                        <div class="col-md-12 mb-3">
+                          <div class="form-group">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Email Address" required>
+                          </div>
+                        </div>
+                        <script>
+                          $(document).ready(function () {
+                            $('#email').on('input', function () {
+                              let val = $(this).val();
+                              $(this).val(val.replace(/\s/g, ''));
+                              if (val.startsWith('@')) $(this).val('');
+                            });
+                          });
+                        </script>
+                        <div class="col-md-12 mb-3">
+                          <div class="form-group">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                          </div>
+                        </div>
+                        <div class="col-md-12 text-center my-3">
+                          <div class="loading">Loading</div>
+                          <div class="error-message"></div>
+                          <div class="sent-message">Your message has been sent. Thank you!</div>
+                        </div>
+                        <div class="col-md-12 text-center">
+                          <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
+                        </div>
                       </div>
+                    </form>
+                    <div id="successMessage" class="col-md-12 text-center">
+                      <div class="alert alert-success" role="alert">Submission successful!</div>
+                    </div>
                   </div>
-              </div>
-          </div>
-      </div>
+
+                  <div class="col-md-6">
+                    <div class="title-box-2 pt-4 pt-md-0">
+                      <h5 class="title-left">Connect!</h5>
+                    </div>
+                    <div class="socials">
+                      <ul>
+                        <li><a href="https://www.linkedin.com/in/james-settles/"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
+                        <li><a href="https://github.com/eyefixcode"><span class="ico-circle"><i class="bi bi-github"></i></span></a></li>
+                      </ul>
+                    </div>
+                    <div class="more-info">
+                      <p class="lead"></p>
+                      <ul class="list-ico">
+                        <li><span class="bi bi-geo-alt"></span> LOS ANGELES, CA 90008</li>
+                        <li><span class="bi bi-envelope"></span> <a href="mailto:settles.james.b@gmail.com">settles.james.b@gmail.com</a></li>
+                      </ul>
+                    </div>
+                  </div> <!-- /.col-md-6 -->
+                </div> <!-- /.row -->
+              </div> <!-- /.box-shadow-full -->
+            </div> <!-- /.contact-mf -->
+          </div> <!-- /.col-sm-12 -->
+        </div> <!-- /.row -->
+      </div> <!-- /.container -->
+    </section>
   </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
@@ -651,6 +580,49 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <!-- Load particles.js library -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <!-- Custom particles.js config -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const config = {
+        particles: {
+          number: { value: 80, density: { enable: true, value_area: 800 } },
+          color: { value: "#00d4ff" },
+          shape: { type: "circle" },
+          opacity: { value: 0.8, random: false },
+          size: { value: 3, random: true },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#00d4ff",
+            opacity: 0.6,
+            width: 1.5
+          },
+          move: { enable: true, speed: 2, random: true }
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: { enable: true, mode: "repulse" },
+            onclick: { enable: true, mode: "push" },
+            resize: true
+          },
+          modes: {
+            repulse: { distance: 100, duration: 0.4 },
+            push: { particles_nb: 4 }
+          }
+        },
+        retina_detect: true
+      };
+
+      // Apply to multiple sections if needed
+      particlesJS('particles-js-hero', config);
+      particlesJS('particles-js-counter', config);
+      particlesJS('particles-js-contact', config);
+    });
+  </script>
 </body>
 
 </html>
